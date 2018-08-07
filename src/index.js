@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 import NextRouter from 'next/router'
 
 module.exports = opts => new Routes(opts)
-
+module.exports.default = module.exports
 class Routes {
   constructor ({
     Link = NextLink,
